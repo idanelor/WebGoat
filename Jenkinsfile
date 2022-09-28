@@ -26,5 +26,11 @@ pipeline {
                 mvn deploy
             }
         }
+        stage('Deploy-#2') {
+            steps {
+                echo 'Deploying....'
+                mvn deploy
+            }
+        }
     }
 }
